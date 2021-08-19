@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+  src="https://code.jquery.com/jquery-3.4.1.js"</script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <label class="logo">SSK Academy</label>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="ctive" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Courses.html">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dec.html">Decoration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="wedd.html">Invetation Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hall.html">Hall Booking</a>
+                </li>
+            </ul>
+            <div class="icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+       </header>
+       <section class="section">
+           <div>
+               <
+           </div>
+        <ul class="section-menu">
+            <h1 class="text">Welcome To Online-Z</h1>
+             <li class="section-item1">
+                <a class="Bctive" href="hall.html">Hall Booking</a>
+            </li>
+            <li class="section-item1">
+                <a class="Bctive" href="Courses.html">COURSES</a>
+            </li>
+            <li class="section-item2">
+                <a  class="Bctive" href="dec.html">Decoration</a>
+            </li>
+            <li class="section-item2">
+                <a  class="Bctive" href="wedd.html">Invetation Cards</a>
+            </li>
+        </ul>
+        <div class="search-contanor">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="serach" class="searchz">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+       </section>
+       <footer class="footer">
+        <div class="footer-menu">
+            <h1 class="h1">All Serives</h1>
+            <li class="footer-item">
+                <a href="Courses.html">COURSES</a>
+            </li>
+            <li class="footer-item">
+                <a href="dec.html">Decoration</a>
+            </li>
+            <li class="footer-item">
+                <a href="wedd.html">Invetation Cards</a>
+            </li>
+            <li class="footer-item">
+                <a href="hall.html">Hall Booking</a>
+            </li>
+            <li class="footer-item">
+                <a>&copy Copyright</a>
+            </li>
+        </div>
+        </footer>
+    <script>
+          const icon = document.querySelector(".icon");
+          const navmenu = document.querySelector(".nav-menu");
+          
+          icon.addEventListener("click", mobileMenu);
+
+          function mobileMenu() {
+             icon.classList.toggle("active");
+             navmenu.classList.toggle("active");
+          }
+          const navitem = document.querySelectorAll(".nav-item");
+          
+          navitem.forEach(n => n.addEventListener("click", closeMenu));
+
+          function closeMenu() {
+             icon.classList.remove("active");
+             navmenu.classList.remove("active");
+          }
+     </script>
+</body>
+</html>
